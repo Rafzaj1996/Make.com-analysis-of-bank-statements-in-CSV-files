@@ -8,7 +8,7 @@ Dla każdej transakcji:
 - Tworzony jest odpowiedni rekord w AirTable.
 - Wydatki są kategoryzowane przy użyciu OpenAI API.
 - Przychody są analizowane pod kątem identyfikacji płatności za zamówienia.
-- Na podstawie danych z przelewu, status zamówienia w CRM jest aktualizowany.
+- Na podstawie danych z przelewu, status zamówienia jest aktualizowany w systemie CRM.
 
 ---
 
@@ -111,7 +111,7 @@ Workflow składa się z 6 głównych faz:
 | Make.com         | Główne środowisko workflow                   |
 | Webhook          | Odbieranie pliku CSV                         |
 | AirTable         | Baza danych transakcji                       |
-| OpenAI API       | Kategoryzacja wydatków                       |
+| OpenAI API       | Kategoryzacja wydatków, analiza tytułów przelewów                       |
 | CRM (PlentyMarket) | Statusy zamówień i płatności             |
 
 ---
